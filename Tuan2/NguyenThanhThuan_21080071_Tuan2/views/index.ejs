@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <h1>Danh sách các môn học</h1>
+    <table>
+        <thead>
+            <th>STT</th>
+            <th>Tên môn học</th>
+            <th>Loại môn học</th>
+            <th>Học kỳ</th>
+            <th>Khoa</th>
+        </thead>
+        <tbody>
+            <% for (let i=0; i < data.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= data[i].stt %>
+                    </td>
+                    <td>
+                        <%= data[i].tenMonHoc %>
+                    </td>
+                    <td>
+                        <%= data[i].loaiMonHoc %>
+                    </td>
+                    <td>
+                        <%= data[i].hocKy %>
+                    </td>
+                    <td>
+                        <%= data[i].khoa %>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
